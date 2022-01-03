@@ -1,1 +1,1 @@
-# loja_opensource
+# loja-opensource
