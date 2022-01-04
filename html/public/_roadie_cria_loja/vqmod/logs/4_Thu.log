@@ -1,0 +1,36 @@
+---------- Date: 2019-08-01 11:48:56 ~ IP : 189.111.90.56 ----------
+REQUEST URI : /novamoda/comprar-L-Carnitina-Fire--Midway-240mL-barata-melhor-valor
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <span class="price-old"><?php echo $price; ?></span>
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(15)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 13:36:25 ~ IP : 8.37.70.101 ----------
+REQUEST URI : /novamoda/produto1
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <span class="price-old"><?php echo $price; ?></span>
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(15)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+
+----------------------------------------------------------------------
+
+

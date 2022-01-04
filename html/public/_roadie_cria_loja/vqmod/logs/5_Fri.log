@@ -1,0 +1,51 @@
+---------- Date: 2019-08-02 01:16:26 ~ IP : 66.249.75.203 ----------
+REQUEST URI : /novamoda/produto-apostila-22
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <span class="price-old"><?php echo $price; ?></span>
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(15)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-02 14:35:27 ~ IP : 179.100.75.169 ----------
+REQUEST URI : /novamoda/admin/index.php?route=catalog/product&token=ihcomLV4KwiOgadMZfXIKTXwE6DmPxvF
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : admin/controller/catalog/product.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $option_info['type'] == 'select'
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-02 15:07:41 ~ IP : 179.100.75.169 ----------
+REQUEST URI : /novamoda/produto-apostila-22
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <span class="price-old"><?php echo $price; ?></span>
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(15)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+
+----------------------------------------------------------------------
+
+

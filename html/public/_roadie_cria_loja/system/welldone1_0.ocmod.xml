@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Welldone</name>
+    <code>default</code>
+    <version>1.0</version>
+    <author>Nick M. "webdev.nick@gmail.com"</author>
+    
+    <file path="admin/controller/common/dashboard.php">
+       <operation>
+            <search><![CDATA[$data['recent'] = $this->load->controller('dashboard/recent');]]></search>
+            <add position="after"><![CDATA[
+             /* Welldone Theme modification */
+             $data['comments_simple_blog'] = $this->load->controller('dashboard/comments_simple_blog');
+            /* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="admin/controller/common/menu.php">
+       <operation>
+            <search><![CDATA[$data['text_openbay_order_import'] = $this->language->get('text_openbay_order_import');]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+                $data['text_simple_blogs'] = $this->language->get('text_simple_blogs');
+            		$data['text_simple_blog_author'] = $this->language->get('text_simple_blog_author');
+            		$data['text_simple_blog_category'] = $this->language->get('text_simple_blog_category');
+            		$data['text_simple_blog_article'] = $this->language->get('text_simple_blog_article');
+            		$data['text_simple_blog_article_comment'] = $this->language->get('text_simple_blog_article_comment');
+            		$data['text_simple_blog_view_report'] = $this->language->get('text_simple_blog_view_report');
+            		$data['text_simple_blog_setting'] = $this->language->get('text_simple_blog_setting');
+            		$data['text_simple_blog_general_setting'] = $this->language->get('text_simple_blog_general_setting');
+            		$data['text_simple_blog_category_setting'] = $this->language->get('text_simple_blog_category_setting');
+                /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$data['text_openbay_order_import'] = $this->language->get('text_openbay_order_import');]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+    $data['simple_blog_author'] = $this->url->link('simple_blog/author', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_category'] = $this->url->link('simple_blog/category', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_article'] = $this->url->link('simple_blog/article', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_comment'] = $this->url->link('simple_blog/comment', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_general_setting'] = $this->url->link('module/simple_blog', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_category_setting'] = $this->url->link('module/simple_blog_category', 'token=' . $this->session->data['token'], 'SSL');
+		$data['simple_blog_view_report'] = $this->url->link('simple_blog/report', 'token=' . $this->session->data['token'], 'SSL');
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="admin/language/english/common/menu.php">
+       <operation>
+            <search><![CDATA[$_['text_paypal_search']               = 'Search';]]></search>
+            <add position="before"><![CDATA[
+             /* Welldone Theme modification */
+$_['text_simple_blogs']	= 'Simple Blog';
+$_['text_simple_blog_author']	= 'Author';
+$_['text_simple_blog_category']	= 'Category';
+$_['text_simple_blog_article']	= 'Article';
+$_['text_simple_blog_article_comment']	= 'Article Comment';
+$_['text_simple_blog_setting'] = 'Setting';
+$_['text_simple_blog_general_setting'] = 'General Setting';
+$_['text_simple_blog_category_setting'] = 'Category Setting';
+$_['text_simple_blog_view_report'] = 'Report';
+/* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="admin/language/en-gb/common/menu.php">
+       <operation>
+            <search><![CDATA[$_['text_paypal_search']               = 'Search';]]></search>
+            <add position="before"><![CDATA[
+             /* Welldone Theme modification */
+$_['text_simple_blogs']	= 'Simple Blog';
+$_['text_simple_blog_author']	= 'Author';
+$_['text_simple_blog_category']	= 'Category';
+$_['text_simple_blog_article']	= 'Article';
+$_['text_simple_blog_article_comment']	= 'Article Comment';
+$_['text_simple_blog_setting'] = 'Setting';
+$_['text_simple_blog_general_setting'] = 'General Setting';
+$_['text_simple_blog_category_setting'] = 'Category Setting';
+$_['text_simple_blog_view_report'] = 'Report';
+/* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="admin/language/portuguese-br/common/menu.php">
+       <operation>
+            <search><![CDATA[$_['text_paypal_search']               = 'Pesquisar';]]></search>
+            <add position="before"><![CDATA[
+             /* Welldone Theme modification */
+$_['text_simple_blogs'] = 'Simple Blog';
+$_['text_simple_blog_author']   = 'Autor';
+$_['text_simple_blog_category'] = 'Categoria';
+$_['text_simple_blog_article']  = 'Artigo';
+$_['text_simple_blog_article_comment']  = 'Comentário';
+$_['text_simple_blog_setting'] = 'Configuração';
+$_['text_simple_blog_general_setting'] = 'Geral';
+$_['text_simple_blog_category_setting'] = 'Categoria';
+$_['text_simple_blog_view_report'] = 'Relatório';
+/* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/model/design/layout.php">
+       <operation>
+            <search index="0"><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");]]></search>
+            <add position="replace"><![CDATA[
+             /* Welldone Theme modification */
+		$this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "' AND `code` NOT LIKE 'welldone_%'");
+    /* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");]]></search>
+            <add position="replace"><![CDATA[
+              /* Welldone Theme modification */
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "' AND `code` NOT LIKE 'welldone_%'");
+    /* End of Welldone Theme modification */  
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "' ORDER BY position ASC, sort_order ASC");]]></search>
+            <add position="replace"><![CDATA[
+              /* Welldone Theme modification */
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "' AND code` NOT LIKE 'welldone_%' ORDER BY position ASC, sort_order ASC");
+    /* End of Welldone Theme modification */  
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="admin/view/template/common/dashboard.tpl">
+       <operation>
+            <search><![CDATA[<div class="col-lg-8 col-md-12 col-sm-12 col-sx-12"> <?php echo $recent; ?> </div>]]></search>
+            <add position="replace"><![CDATA[
+                <div class="col-lg-8 col-md-12 col-sm-12 col-sx-12"> 
+                    <?php echo $recent; ?> 
+                    <!-- Welldone Theme modification -->
+                    <?php if(($this->config->has('simple_blog_status')) 
+                            && ($this->config->get('simple_blog_status'))
+                            && ($this->config->has('simple_blog_comment_auto_approval')) 
+                            && (!$this->config->get('simple_blog_comment_auto_approval'))) { ?>
+                    <?php echo $comments_simple_blog; ?>
+                    <?php } ?>
+                    <!-- End of Welldone Theme modification -->  
+                </div>                                      
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/view/template/common/menu.tpl">
+       <operation>
+            <search><![CDATA[<li id="reports">]]></search>
+            <add position="before"><![CDATA[
+            <!-- Welldone Theme modification -->
+  <li id="simple-blog"><a class="parent"><i class="fa fa-file-text-o fa-fw"></i> <span><?php echo $text_simple_blogs; ?></span></a>
+      <ul>
+          <li><a href="<?php echo $simple_blog_article; ?>"><?php echo $text_simple_blog_article; ?></a></li>
+          <li><a href="<?php echo $simple_blog_category; ?>"><?php echo $text_simple_blog_category; ?></a></li>
+			<li><a href="<?php echo $simple_blog_author; ?>"><?php echo $text_simple_blog_author; ?></a></li>
+			<li><a href="<?php echo $simple_blog_comment; ?>"><?php echo $text_simple_blog_article_comment; ?></a></li>
+			<li><a href="<?php echo $simple_blog_view_report; ?>"><?php echo $text_simple_blog_view_report; ?></a></li>
+          <li><a class="parent"><?php echo $text_simple_blog_setting; ?></a>
+              <ul>
+					<li><a href="<?php echo $simple_blog_general_setting; ?>"><?php echo $text_simple_blog_general_setting; ?></a></li>
+					<li><a href="<?php echo $simple_blog_category_setting; ?>"><?php echo $text_simple_blog_category_setting; ?></a></li>
+				</ul>
+          </li>
+      </ul>
+  </li>
+  <!-- End of Welldone Theme modification -->
+                
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/common/column_left.php">
+       <operation>
+            <search><![CDATA[$part = explode('.', $module['code']);]]></search>
+            <add position="after"><![CDATA[
+            /* Welldone Theme modification */
+      if (strpos($module['code'], 'welldone_') === 0) {
+                if ($this->config->get($part[0] . '_' . $module['layout_module_id'] . '_status')) {
+                    $action = $this->load->controller('module/' . $part[0], array(
+                        'position'  => $module['position'],
+                        'layout_id' => $layout_id,
+                        'module_id' => $part[1]
+                    ));
+                    if ($action) {
+                        $data['modules'][] = $action;
+                    }
+                }
+                continue;
+            }
+      /* End of Welldone Theme modification */
+                
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/column_left.tpl')) {]]></search>
+            <add position="before"><![CDATA[
+            /* Welldone Theme modification */
+    if ($this->welldone->get_settings('left-menu'))
+    {
+      $modules = array();
+      $modules[] = $this->welldone->get_settings('left-menu');
+      foreach($data['modules'] as $mod)
+        $modules[] = $mod;
+      $data['modules'] = $modules;  
+    }
+    /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[return $this->load->view('common/column_left', $data);]]></search>
+            <add position="before"><![CDATA[
+            /* Welldone Theme modification */
+    if ($this->welldone->get_settings('left-menu'))
+    {
+      $modules = array();
+      $modules[] = $this->welldone->get_settings('left-menu');
+      foreach($data['modules'] as $mod)
+        $modules[] = $mod;
+      $data['modules'] = $modules;  
+    }
+    /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/common/column_right.php">
+       <operation>
+            <search><![CDATA[if (isset($part[0]) && $this->config->get($part[0] . '_status')) {]]></search>
+            <add position="before"><![CDATA[
+                /* Welldone Theme modification */
+      if (strpos($module['code'], 'welldone_') === 0) {
+                if ($this->config->get($part[0] . '_' . $module['layout_module_id'] . '_status')) {
+                    $action = $this->load->controller('module/' . $part[0], array(
+                        'position'  => $module['position'],
+                        'layout_id' => $layout_id,
+                        'module_id' => $part[1]
+                    ));
+                    if ($action) {
+                        $data['modules'][] = $action;
+                    }
+                }
+                continue;
+            }
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/common/content_bottom.php">
+       <operation>
+            <search><![CDATA[if (isset($part[0]) && $this->config->get($part[0] . '_status')) {]]></search>
+            <add position="before"><![CDATA[
+                /* Welldone Theme modification */
+      if (strpos($module['code'], 'welldone_') === 0) {
+                if ($this->config->get($part[0] . '_' . $module['layout_module_id'] . '_status')) {
+                    $action = $this->load->controller('module/' . $part[0], array(
+                        'position'  => $module['position'],
+                        'layout_id' => $layout_id,
+                        'module_id' => $part[1]
+                    ));
+                    if ($action) {
+                        $data['modules'][] = $action;
+                    }
+                }
+                continue;
+            }
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/common/content_top.php">
+       <operation>
+            <search><![CDATA[if (isset($part[0]) && $this->config->get($part[0] . '_status')) {]]></search>
+            <add position="before"><![CDATA[
+                /* Welldone Theme modification */
+      if (strpos($module['code'], 'welldone_') === 0) {
+                if ($this->config->get($part[0] . '_' . $module['layout_module_id'] . '_status')) {
+                    $action = $this->load->controller('module/' . $part[0], array(
+                        'position'  => $module['position'],
+                        'layout_id' => $layout_id,
+                        'module_id' => $part[1]
+                    ));
+                    if ($action) {
+                        $data['modules'][] = $action;
+                    }
+                }
+                continue;
+            }
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/common/footer.php">
+       <operation>
+            <search><![CDATA[$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+    if(($this->config->has('simple_blog_status')) && ($this->config->get('simple_blog_status'))) {
+				    $data['simple_blog_found'] = 1;
+				    if($this->config->has('simple_blog_footer_heading')) {
+				        $data['simple_blog_footer_heading'] = $this->config->get('simple_blog_footer_heading');
+				    } else {
+				        $data['simple_blog_footer_heading'] = $this->language->get('text_simple_blog');
+				    }
+                    $data['simple_blog']	= $this->url->link('simple_blog/article');
+				}
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/module/bestseller.php">
+       <operation>
+            <search><![CDATA[$results = $this->model_catalog_product->getBestSellerProducts($setting['limit']);]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $rating,]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/module/featured.php">
+       <operation>
+            <search><![CDATA[$this->load->model('catalog/product');]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $rating,]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($product_info['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/module/latest.php">
+       <operation>
+            <search><![CDATA[$this->load->model('catalog/product');]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $rating,]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/module/special.php">
+       <operation>
+            <search><![CDATA[$this->load->model('catalog/product');]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+    /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $rating,]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/product/category.php">
+       <operation>
+            <search><![CDATA[$results = $this->model_catalog_product->getProducts($filter_data);]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $result['rating'],]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/product/manufacturer.php">
+       <operation>
+            <search><![CDATA[$results = $this->model_catalog_product->getProducts($filter_data);]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $result['rating'],]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/product/product.php">
+       <operation>
+            <search><![CDATA[$this->load->model('tool/image');]]></search>
+            <add position="before"><![CDATA[
+                /* Welldone Theme modification */
+      if ($product_info['quantity'] <= 0) {
+        $data['stock_status_class'] = 'danger'; 
+      }
+      else
+        $data['stock_status_class'] = 'success';
+      $this->load->model('welldone/product');  
+      $data['labels'] = $this->model_welldone_product->getLabels($product_info['product_id']);
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $rating,]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+     <file path="catalog/controller/product/search.php">
+       <operation>
+            <search><![CDATA[$results = $this->model_catalog_product->getProducts($filter_data);]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $result['rating'],]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/controller/common/seo_url.php">
+       <operation>
+            <search><![CDATA[if ($url[0] == 'category_id') {]]></search>
+            <add position="before"><![CDATA[
+             /* Welldone Theme modification */
+          if($url[0] == 'simple_blog_article_id') {					
+    					$this->request->get['simple_blog_article_id'] = $url[1];
+              $query->row['query'] = '';
+    				}
+            
+    				if($url[0] == 'simple_blog_author_id') {
+    					$this->request->get['simple_blog_author_id'] = $url[1];
+              $query->row['query'] = '';
+    				}
+    				
+    				if ($url[0] == 'simple_blog_category_id') {
+    					if (!isset($this->request->get['simple_blog_category_id'])) {
+    						$this->request->get['simple_blog_category_id'] = $url[1];
+    					} else {
+    						$this->request->get['simple_blog_category_id'] .= '_' . $url[1];
+    					}
+              $query->row['query'] = '';
+    				}
+          /* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$this->request->get['route'] = 'error/not_found']]></search>
+            <add position="replace"><![CDATA[
+                          /* Welldone Theme modification */
+          if(($this->config->has('simple_blog_seo_keyword')) && ($this->db->escape($part) == $this->config->get('simple_blog_seo_keyword'))) {
+                    
+                } else if($this->db->escape($part) == 'simple-blog') {
+                    
+                } else {
+                    $this->request->get['route'] = 'error/not_found';
+
+					       break;
+               }  
+          /* End of Welldone Theme modification */
+
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$this->request->get['route'] = 'information/information';]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+          $this->request->get['route'] = 'information/information';
+  				} else if (isset($this->request->get['simple_blog_article_id'])) {
+  					$this->request->get['route'] = 'simple_blog/article/view';
+  				} else if (isset($this->request->get['simple_blog_author_id'])) {
+  					$this->request->get['route'] = 'simple_blog/author';
+  				} else if (isset($this->request->get['simple_blog_category_id'])) {
+  					$this->request->get['route'] = 'simple_blog/category';
+  				} /*else if ($this->request->get['_route_'] ==  'simple-blog') {
+  					$this->request->get['route'] = 'simple_blog/article';*/
+                      
+          else {
+            if(($this->config->has('simple_blog_seo_keyword'))) {
+                if($this->request->get['_route_'] == $this->config->get('simple_blog_seo_keyword')) {
+                    $this->request->get['route'] = 'simple_blog/article';
+                }
+            } if($this->request->get['_route_'] == 'simple-blog') {
+                $this->request->get['route'] = 'simple_blog/article';
+           }
+          /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[} elseif ($key == 'path') {]]></search>
+            <add position="replace"><![CDATA[
+                /* Welldone Theme modification */  
+          
+				} else if($data['route'] == 'simple_blog/article/view' && $key == 'simple_blog_article_id') {
+					
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+					
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						unset($data[$key]);
+					} else {
+						$url .= '/simple-blog/' . (int)$value;	
+						unset($data[$key]);
+					}
+					
+				} else if($data['route'] == 'simple_blog/author' && $key == 'simple_blog_author_id') {
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+					
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						unset($data[$key]);
+					} else {
+						$url .= '/simple-blog/' . (int)$value;	
+						unset($data[$key]);
+					}
+				} else if($data['route'] == 'simple_blog/category' && $key == 'simple_blog_category_id') {
+				
+					$blog_categories = explode("_", $value);
+					
+					foreach ($blog_categories as $blog_category) {
+						$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'simple_blog_category_id=" . (int)$blog_category . "'");
+						
+						if ($query->num_rows) {
+							$url .= '/' . $query->row['keyword'];
+						} else {
+							$url .= '/simple-category' . $blog_category;
+						}
+					}
+					unset($data[$key]);
+										
+				} else if($data['route'] == 'simple_blog/search') {
+					//echo $data['route'];
+					if(isset($key) && ($key == 'blog_search')) {
+						$url .= '/search&blog_search=' . $value;
+					} else {
+						$url .= '/search';
+					}		
+					//echo $url; 
+				} else if(isset($data['route']) && $data['route'] == 'simple_blog/article' && $key != 'simple_blog_article_id' && $key != 'simple_blog_author_id' && $key != 'simple_blog_category_id' && $key != 'page') {
+				    
+                    if($this->config->has('simple_blog_seo_keyword')) {
+                        $url .=  '/' . $this->config->get('simple_blog_seo_keyword');
+                    } else {
+                        $url .=  '/simple-blog';
+                    }
+				} elseif ($key == 'path') {
+        
+        /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/startup/seo_url.php">
+       <operation>
+            <search><![CDATA[if ($url[0] == 'category_id') {]]></search>
+            <add position="before"><![CDATA[
+             /* Welldone Theme modification */
+          if($url[0] == 'simple_blog_article_id') {					
+    					$this->request->get['simple_blog_article_id'] = $url[1];
+              $query->row['query'] = '';
+    				}
+            
+    				if($url[0] == 'simple_blog_author_id') {
+    					$this->request->get['simple_blog_author_id'] = $url[1];
+              $query->row['query'] = '';
+    				}
+    				
+    				if ($url[0] == 'simple_blog_category_id') {
+    					if (!isset($this->request->get['simple_blog_category_id'])) {
+    						$this->request->get['simple_blog_category_id'] = $url[1];
+    					} else {
+    						$this->request->get['simple_blog_category_id'] .= '_' . $url[1];
+    					}
+              $query->row['query'] = '';
+    				}
+          /* End of Welldone Theme modification */   
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$this->request->get['route'] = 'error/not_found']]></search>
+            <add position="replace"><![CDATA[
+                          /* Welldone Theme modification */
+          if(($this->config->has('simple_blog_seo_keyword')) && ($this->db->escape($part) == $this->config->get('simple_blog_seo_keyword'))) {
+                    
+                } else if($this->db->escape($part) == 'simple-blog') {
+                    
+                } else {
+                    $this->request->get['route'] = 'error/not_found';
+
+					       break;
+               }  
+          /* End of Welldone Theme modification */
+
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[$this->request->get['route'] = 'information/information';]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+          $this->request->get['route'] = 'information/information';
+  				} else if (isset($this->request->get['simple_blog_article_id'])) {
+  					$this->request->get['route'] = 'simple_blog/article/view';
+  				} else if (isset($this->request->get['simple_blog_author_id'])) {
+  					$this->request->get['route'] = 'simple_blog/author';
+  				} else if (isset($this->request->get['simple_blog_category_id'])) {
+  					$this->request->get['route'] = 'simple_blog/category';
+  				} /*else if ($this->request->get['_route_'] ==  'simple-blog') {
+  					$this->request->get['route'] = 'simple_blog/article';*/
+                      
+          else {
+            if(($this->config->has('simple_blog_seo_keyword'))) {
+                if($this->request->get['_route_'] == $this->config->get('simple_blog_seo_keyword')) {
+                    $this->request->get['route'] = 'simple_blog/article';
+                }
+            } if($this->request->get['_route_'] == 'simple-blog') {
+                $this->request->get['route'] = 'simple_blog/article';
+           }
+          /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[} elseif ($key == 'path') {]]></search>
+            <add position="replace"><![CDATA[
+                /* Welldone Theme modification */  
+          
+				} else if($data['route'] == 'simple_blog/article/view' && $key == 'simple_blog_article_id') {
+					
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+					
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						unset($data[$key]);
+					} else {
+						$url .= '/simple-blog/' . (int)$value;	
+						unset($data[$key]);
+					}
+					
+				} else if($data['route'] == 'simple_blog/author' && $key == 'simple_blog_author_id') {
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+					
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						unset($data[$key]);
+					} else {
+						$url .= '/simple-blog/' . (int)$value;	
+						unset($data[$key]);
+					}
+				} else if($data['route'] == 'simple_blog/category' && $key == 'simple_blog_category_id') {
+				
+					$blog_categories = explode("_", $value);
+					
+					foreach ($blog_categories as $blog_category) {
+						$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'simple_blog_category_id=" . (int)$blog_category . "'");
+						
+						if ($query->num_rows) {
+							$url .= '/' . $query->row['keyword'];
+						} else {
+							$url .= '/simple-category' . $blog_category;
+						}
+					}
+					unset($data[$key]);
+										
+				} else if($data['route'] == 'simple_blog/search') {
+					//echo $data['route'];
+					if(isset($key) && ($key == 'blog_search')) {
+						$url .= '/search&blog_search=' . $value;
+					} else {
+						$url .= '/search';
+					}		
+					//echo $url; 
+				} else if(isset($data['route']) && $data['route'] == 'simple_blog/article' && $key != 'simple_blog_article_id' && $key != 'simple_blog_author_id' && $key != 'simple_blog_category_id' && $key != 'page') {
+				    
+                    if($this->config->has('simple_blog_seo_keyword')) {
+                        $url .=  '/' . $this->config->get('simple_blog_seo_keyword');
+                    } else {
+                        $url .=  '/simple-blog';
+                    }
+				} elseif ($key == 'path') {
+        
+        /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="catalog/controller/product/special.php">
+       <operation>
+            <search><![CDATA[$results = $this->model_catalog_product->getProductSpecials($filter_data);]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+      $this->load->model('welldone/product');
+      /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA['rating'      => $result['rating'],]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+          'labels'        => $this->model_welldone_product->getLabels($result['product_id']),
+          /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="system/engine/action.php">
+       <operation>
+            <search><![CDATA[include_once($this->file);]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+                include_once(modification($this->file));
+            /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[include_once($file);]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+                include_once(modification($this->file));
+            /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="system/engine/front.php">
+       <operation>
+            <search><![CDATA[while ($action) {]]></search>
+            <add position="before"><![CDATA[
+            /* Welldone Theme modification */
+    require_once(DIR_SYSTEM . 'welldone/startup.php');
+    /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[while ($action instanceof Action) {]]></search>
+            <add position="before"><![CDATA[
+            /* Welldone Theme modification */
+    require_once(DIR_SYSTEM . 'welldone/startup.php');
+    /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="system/engine/loader.php">
+       <operation>
+            <search><![CDATA[private $registry;]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+  public function __get($key) {
+      return $this->registry->get($key);
+  }
+
+  public function __set($key, $value) {
+      $this->registry->set($key, $value);
+  }
+  /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[protected $registry;]]></search>
+            <add position="after"><![CDATA[
+                /* Welldone Theme modification */
+  public function __get($key) {
+      return $this->registry->get($key);
+  }
+
+  public function __set($key, $value) {
+      $this->registry->set($key, $value);
+  }
+  /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[include_once($file);]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+              include_once(modification($file));
+            /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search><![CDATA[require($file);]]></search>
+            <add position="replace"><![CDATA[
+            /* Welldone Theme modification */
+              require(modification($file));
+            /* End of Welldone Theme modification */    
+            ]]></add>
+        </operation>
+        
+    </file>
+    
+    <file path="system/library/config.php">
+       <operation>
+            <search><![CDATA[require($file);]]></search>
+            <add position="replace"><![CDATA[
+                /* Welldone Theme modification */
+              require(modification($file));
+            /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="system/library/language.php">
+       <operation>
+            <search><![CDATA[require($file);]]></search>
+            <add position="replace"><![CDATA[
+                /* Welldone Theme modification */
+              require(modification($file));
+            /* End of Welldone Theme modification */
+            ]]></add>
+        </operation>
+    </file>
+    
+    
+    
+</modification>

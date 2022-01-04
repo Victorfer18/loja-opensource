@@ -1,0 +1,63 @@
+---------- Date: 2019-07-31 10:43:04 ~ IP : 179.154.141.118 ----------
+REQUEST URI : /novamoda/admin/index.php?route=catalog/product&token=R8o66TRjWNbCTAVmNz43EXIaTOWmVL7J
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : admin/controller/catalog/product.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $option_info['type'] == 'select'
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-07-31 10:48:31 ~ IP : 179.154.141.118 ----------
+REQUEST URI : /novamoda/admin/index.php?route=catalog/product&token=R8o66TRjWNbCTAVmNz43EXIaTOWmVL7J
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : admin/controller/catalog/product.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $option_info['type'] == 'select'
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-07-31 14:42:39 ~ IP : 179.154.141.118 ----------
+REQUEST URI : /novamoda/admin/index.php?route=catalog/product/autocomplete&token=7zr5Og2R6ObHPQTTm2rAWhBVG8LDEQ81&filter_name=
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : admin/controller/catalog/product.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): $option_info['type'] == 'select'
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-07-31 18:00:31 ~ IP : 66.249.65.87 ----------
+REQUEST URI : /novamoda/index.php?route=product/product&product_id=52
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\public\novamoda\vqmod/xml/dev5-quantidade-opcoes.xml
+   id        : Quantidade x Opções
+   version   : 2.1.x
+   vqmver    : 
+   author    : Dev5™
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <span class="price-old"><?php echo $price; ?></span>
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(15)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+
+----------------------------------------------------------------------
+
+
