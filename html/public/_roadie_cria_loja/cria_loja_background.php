@@ -165,7 +165,7 @@ try {
 	$htaccess = $htaccess . 'RewriteEngine On'. PHP_EOL;
 	while ($row = $sql->fetch_assoc()) {
 		$nome_da_loja = $row['nome_da_loja'];
-
+		$nome_da_loja = str_replace(' ', '',$nome_da_loja);
 		$htaccess = $htaccess . 'RewriteCond %{HTTP_HOST} ' . $nome_da_loja . '.' . $dominio_loja . '$' . PHP_EOL;
 		$htaccess = $htaccess . 'RewriteCond %{REQUEST_URI} !^/' . $nome_da_loja . PHP_EOL;
 		$htaccess = $htaccess . 'RewriteRule ^(.*)$ /' . $nome_da_loja . '/$1 [L]'. PHP_EOL . PHP_EOL;
@@ -178,6 +178,7 @@ try {
 	//$htaccess = $htaccess . 'RewriteEngine On'. PHP_EOL;
 	while ($row = $sql->fetch_assoc()) {
 		$dominio = $row['dominio'];
+		$dominio = str_replace(' ', '', $dominio);
 		$nome_da_loja = $row['nome_da_loja'];
 
 		$htaccess = $htaccess . 'RewriteCond %{HTTP_HOST} ' . $dominio . '$' . PHP_EOL;
@@ -185,6 +186,7 @@ try {
 		$htaccess = $htaccess . 'RewriteRule ^(.*)$ /' . $nome_da_loja . '/$1 [L]'. PHP_EOL . PHP_EOL;
 	}
 
+	file_put_contents('../.htaccess_old_auto', file_get_contents('../.htaccess'));
 	file_put_contents('../.htaccess', $htaccess);
 
 	$msg .= 'Gerado subdomínio<br>';
