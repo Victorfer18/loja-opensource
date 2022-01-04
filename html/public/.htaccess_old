@@ -1,0 +1,613 @@
+#Este arquivo é gerado automaticamente através do script de criação de lojas
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} camasi.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/camasi
+RewriteRule ^(.*)$ /camasi/$1 [L]
+
+RewriteCond %{HTTP_HOST} mabele.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/mabele
+RewriteRule ^(.*)$ /mabele/$1 [L]
+
+RewriteCond %{HTTP_HOST} dresshall.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/dresshall
+RewriteRule ^(.*)$ /dresshall/$1 [L]
+
+RewriteCond %{HTTP_HOST} quantacor.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/quantacor
+RewriteRule ^(.*)$ /quantacor/$1 [L]
+
+RewriteCond %{HTTP_HOST} palaciodascalotas.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/palaciodascalotas
+RewriteRule ^(.*)$ /palaciodascalotas/$1 [L]
+
+RewriteCond %{HTTP_HOST} casadasbolsas.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/casadasbolsas
+RewriteRule ^(.*)$ /casadasbolsas/$1 [L]
+
+RewriteCond %{HTTP_HOST} novamoda.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/novamoda
+RewriteRule ^(.*)$ /novamoda/$1 [L]
+
+RewriteCond %{HTTP_HOST} rdbeauty2.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/rdbeauty2
+RewriteRule ^(.*)$ /rdbeauty2/$1 [L]
+
+RewriteCond %{HTTP_HOST} makeyourdoll.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/makeyourdoll
+RewriteRule ^(.*)$ /makeyourdoll/$1 [L]
+
+RewriteCond %{HTTP_HOST} thaje.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/thaje
+RewriteRule ^(.*)$ /thaje/$1 [L]
+
+RewriteCond %{HTTP_HOST} jimny.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/jimny
+RewriteRule ^(.*)$ /jimny/$1 [L]
+
+RewriteCond %{HTTP_HOST} rdauto.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/rdauto
+RewriteRule ^(.*)$ /rdauto/$1 [L]
+
+RewriteCond %{HTTP_HOST} lojafranqueado.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/lojafranqueado
+RewriteRule ^(.*)$ /lojafranqueado/$1 [L]
+
+RewriteCond %{HTTP_HOST} fasciniofloicultura.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/fasciniofloicultura
+RewriteRule ^(.*)$ /fasciniofloicultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} santacintura.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/santacintura
+RewriteRule ^(.*)$ /santacintura/$1 [L]
+
+RewriteCond %{HTTP_HOST} stilofashion.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/stilofashion
+RewriteRule ^(.*)$ /stilofashion/$1 [L]
+
+RewriteCond %{HTTP_HOST} meutrico.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/meutrico
+RewriteRule ^(.*)$ /meutrico/$1 [L]
+
+RewriteCond %{HTTP_HOST} lindasfloricultura.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/lindasfloricultura
+RewriteRule ^(.*)$ /lindasfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} multicell.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/multicell
+RewriteRule ^(.*)$ /multicell/$1 [L]
+
+RewriteCond %{HTTP_HOST} autoclick.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/autoclick
+RewriteRule ^(.*)$ /autoclick/$1 [L]
+
+RewriteCond %{HTTP_HOST} fabinarte.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/fabinarte
+RewriteRule ^(.*)$ /fabinarte/$1 [L]
+
+RewriteCond %{HTTP_HOST} artepresentesfloricultura.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/artepresentesfloricultura
+RewriteRule ^(.*)$ /artepresentesfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} topsulbebidas.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/topsulbebidas
+RewriteRule ^(.*)$ /topsulbebidas/$1 [L]
+
+RewriteCond %{HTTP_HOST} casaagropet.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/casaagropet
+RewriteRule ^(.*)$ /casaagropet/$1 [L]
+
+RewriteCond %{HTTP_HOST} playgames.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/playgames
+RewriteRule ^(.*)$ /playgames/$1 [L]
+
+RewriteCond %{HTTP_HOST} esteticaglamour.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/esteticaglamour
+RewriteRule ^(.*)$ /esteticaglamour/$1 [L]
+
+RewriteCond %{HTTP_HOST} belinhababy.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/belinhababy
+RewriteRule ^(.*)$ /belinhababy/$1 [L]
+
+RewriteCond %{HTTP_HOST} boutiqueamandaperes.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/boutiqueamandaperes
+RewriteRule ^(.*)$ /boutiqueamandaperes/$1 [L]
+
+RewriteCond %{HTTP_HOST} santoouro.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/santoouro
+RewriteRule ^(.*)$ /santoouro/$1 [L]
+
+RewriteCond %{HTTP_HOST} lacoeabraco.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/lacoeabraco
+RewriteRule ^(.*)$ /lacoeabraco/$1 [L]
+
+RewriteCond %{HTTP_HOST} jdsestufas.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/jdsestufas
+RewriteRule ^(.*)$ /jdsestufas/$1 [L]
+
+RewriteCond %{HTTP_HOST} scottiproducoes.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/scottiproducoes
+RewriteRule ^(.*)$ /scottiproducoes/$1 [L]
+
+RewriteCond %{HTTP_HOST} fermatmg.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/fermatmg
+RewriteRule ^(.*)$ /fermatmg/$1 [L]
+
+RewriteCond %{HTTP_HOST} acequipamentos.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/acequipamentos
+RewriteRule ^(.*)$ /acequipamentos/$1 [L]
+
+RewriteCond %{HTTP_HOST} artbel.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/artbel
+RewriteRule ^(.*)$ /artbel/$1 [L]
+
+RewriteCond %{HTTP_HOST} auraprivate.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/auraprivate
+RewriteRule ^(.*)$ /auraprivate/$1 [L]
+
+RewriteCond %{HTTP_HOST} brinquero.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/brinquero
+RewriteRule ^(.*)$ /brinquero/$1 [L]
+
+RewriteCond %{HTTP_HOST} cobaia.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/cobaia
+RewriteRule ^(.*)$ /cobaia/$1 [L]
+
+RewriteCond %{HTTP_HOST} docasom.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/docasom
+RewriteRule ^(.*)$ /docasom/$1 [L]
+
+RewriteCond %{HTTP_HOST} docesmonteiro.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/docesmonteiro
+RewriteRule ^(.*)$ /docesmonteiro/$1 [L]
+
+RewriteCond %{HTTP_HOST} dulipestore.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/dulipestore
+RewriteRule ^(.*)$ /dulipestore/$1 [L]
+
+RewriteCond %{HTTP_HOST} eurekapresentes.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/eurekapresentes
+RewriteRule ^(.*)$ /eurekapresentes/$1 [L]
+
+RewriteCond %{HTTP_HOST} evasexshop.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/evasexshop
+RewriteRule ^(.*)$ /evasexshop/$1 [L]
+
+RewriteCond %{HTTP_HOST} glamouresmalteria.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/glamouresmalteria
+RewriteRule ^(.*)$ /glamouresmalteria/$1 [L]
+
+RewriteCond %{HTTP_HOST} grpm.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/grpm
+RewriteRule ^(.*)$ /grpm/$1 [L]
+
+RewriteCond %{HTTP_HOST} hellbonito.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/hellbonito
+RewriteRule ^(.*)$ /hellbonito/$1 [L]
+
+RewriteCond %{HTTP_HOST} innuvem.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/innuvem
+RewriteRule ^(.*)$ /innuvem/$1 [L]
+
+RewriteCond %{HTTP_HOST} lojasts.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/lojasts
+RewriteRule ^(.*)$ /lojasts/$1 [L]
+
+RewriteCond %{HTTP_HOST} mamaefeliz.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/mamaefeliz
+RewriteRule ^(.*)$ /mamaefeliz/$1 [L]
+
+RewriteCond %{HTTP_HOST} mastermusic.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/mastermusic
+RewriteRule ^(.*)$ /mastermusic/$1 [L]
+
+RewriteCond %{HTTP_HOST} mixdecore.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/mixdecore
+RewriteRule ^(.*)$ /mixdecore/$1 [L]
+
+RewriteCond %{HTTP_HOST} nfmb.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/nfmb
+RewriteRule ^(.*)$ /nfmb/$1 [L]
+
+RewriteCond %{HTTP_HOST} nooma.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/nooma
+RewriteRule ^(.*)$ /nooma/$1 [L]
+
+RewriteCond %{HTTP_HOST} portaldajoia.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/portaldajoia
+RewriteRule ^(.*)$ /portaldajoia/$1 [L]
+
+RewriteCond %{HTTP_HOST} rafaelautomoveis.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/rafaelautomoveis
+RewriteRule ^(.*)$ /rafaelautomoveis/$1 [L]
+
+RewriteCond %{HTTP_HOST} styllos.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/styllos
+RewriteRule ^(.*)$ /styllos/$1 [L]
+
+RewriteCond %{HTTP_HOST} tamanhosnobres.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/tamanhosnobres
+RewriteRule ^(.*)$ /tamanhosnobres/$1 [L]
+
+RewriteCond %{HTTP_HOST} vitalemake.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/vitalemake
+RewriteRule ^(.*)$ /vitalemake/$1 [L]
+
+RewriteCond %{HTTP_HOST} testando.rdcommerce.com.br$
+RewriteCond %{REQUEST_URI} !^/testando
+RewriteRule ^(.*)$ /testando/$1 [L]
+
+#Aqui gera-se as lojas com dominio proprio
+
+RewriteCond %{HTTP_HOST} www.portaldajoia.com.br$
+RewriteCond %{REQUEST_URI} !^/portaldajoia
+RewriteRule ^(.*)$ /portaldajoia/$1 [L]
+
+RewriteCond %{HTTP_HOST} portaldajoia.com.br$
+RewriteCond %{REQUEST_URI} !^/portaldajoia
+RewriteRule ^(.*)$ /portaldajoia/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.hellbonito.com.br$
+RewriteCond %{REQUEST_URI} !^/hellbonito
+RewriteRule ^(.*)$ /hellbonito/$1 [L]
+
+RewriteCond %{HTTP_HOST} hellbonito.com.br$
+RewriteCond %{REQUEST_URI} !^/hellbonito
+RewriteRule ^(.*)$ /hellbonito/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.mabele.com.br$
+RewriteCond %{REQUEST_URI} !^/mabele
+RewriteRule ^(.*)$ /mabele/$1 [L]
+
+RewriteCond %{HTTP_HOST} mabele.com.br$
+RewriteCond %{REQUEST_URI} !^/mabele
+RewriteRule ^(.*)$ /mabele/$1 [L]
+
+RewriteCond %{HTTP_HOST} lojaonline.dresshall.com.br$
+RewriteCond %{REQUEST_URI} !^/dresshall
+RewriteRule ^(.*)$ /dresshall/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.lojaonline.dresshall.com.br$
+RewriteCond %{REQUEST_URI} !^/dresshall
+RewriteRule ^(.*)$ /dresshall/$1 [L]
+
+RewriteCond %{HTTP_HOST} palaciodascalotas.com.br$
+RewriteCond %{REQUEST_URI} !^/palaciodascalotas
+RewriteRule ^(.*)$ /palaciodascalotas/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.palaciodascalotas.com.br$
+RewriteCond %{REQUEST_URI} !^/palaciodascalotas
+RewriteRule ^(.*)$ /palaciodascalotas/$1 [L]
+
+RewriteCond %{HTTP_HOST} camasiguimaraes.com.br$
+RewriteCond %{REQUEST_URI} !^/camasi
+RewriteRule ^(.*)$ /camasi/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.camasiguimaraes.com.br$
+RewriteCond %{REQUEST_URI} !^/camasi
+RewriteRule ^(.*)$ /camasi/$1 [L]
+
+RewriteCond %{HTTP_HOST} quantacortintas.com.br$
+RewriteCond %{REQUEST_URI} !^/quantacor
+RewriteRule ^(.*)$ /quantacor/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.quantacortintas.com.br$
+RewriteCond %{REQUEST_URI} !^/quantacor
+RewriteRule ^(.*)$ /quantacor/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.casadasbolsasemalas.com.br$
+RewriteCond %{REQUEST_URI} !^/casadasbolsas
+RewriteRule ^(.*)$ /casadasbolsas/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.casadasbolsasemalas.com.br$
+RewriteCond %{REQUEST_URI} !^/casadasbolsas
+RewriteRule ^(.*)$ /casadasbolsas/$1 [L]
+
+RewriteCond %{HTTP_HOST} thaje.com.br$
+RewriteCond %{REQUEST_URI} !^/thaje
+RewriteRule ^(.*)$ /thaje/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.thaje.com.br$
+RewriteCond %{REQUEST_URI} !^/thaje
+RewriteRule ^(.*)$ /thaje/$1 [L]
+
+RewriteCond %{HTTP_HOST} jimnybr.com$
+RewriteCond %{REQUEST_URI} !^/jimny
+RewriteRule ^(.*)$ /jimny/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.jimnybr.com$
+RewriteCond %{REQUEST_URI} !^/jimny
+RewriteRule ^(.*)$ /jimny/$1 [L]
+
+RewriteCond %{HTTP_HOST} fasciniofloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/fasciniofloicultura
+RewriteRule ^(.*)$ /fasciniofloicultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.fasciniofloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/fasciniofloicultura
+RewriteRule ^(.*)$ /fasciniofloicultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} santacintura.com.br$
+RewriteCond %{REQUEST_URI} !^/santacintura
+RewriteRule ^(.*)$ /santacintura/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.santacintura.com.br$
+RewriteCond %{REQUEST_URI} !^/santacintura
+RewriteRule ^(.*)$ /santacintura/$1 [L]
+
+RewriteCond %{HTTP_HOST} usestylofashion.com.br$
+RewriteCond %{REQUEST_URI} !^/stilofashion
+RewriteRule ^(.*)$ /stilofashion/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.usestylofashion.com.br$
+RewriteCond %{REQUEST_URI} !^/stilofashion
+RewriteRule ^(.*)$ /stilofashion/$1 [L]
+
+RewriteCond %{HTTP_HOST} meutricoartesanato.com.br$
+RewriteCond %{REQUEST_URI} !^/meutrico
+RewriteRule ^(.*)$ /meutrico/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.meutricoartesanato.com.br$
+RewriteCond %{REQUEST_URI} !^/meutrico
+RewriteRule ^(.*)$ /meutrico/$1 [L]
+
+RewriteCond %{HTTP_HOST} multicellcelular.com.br$
+RewriteCond %{REQUEST_URI} !^/multicell
+RewriteRule ^(.*)$ /multicell/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.multicellcelular.com.br$
+RewriteCond %{REQUEST_URI} !^/multicell
+RewriteRule ^(.*)$ /multicell/$1 [L]
+
+RewriteCond %{HTTP_HOST} autoclickce.com.br$
+RewriteCond %{REQUEST_URI} !^/autoclick
+RewriteRule ^(.*)$ /autoclick/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.autoclickce.com.br$
+RewriteCond %{REQUEST_URI} !^/autoclick
+RewriteRule ^(.*)$ /autoclick/$1 [L]
+
+RewriteCond %{HTTP_HOST} lindasfloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/lindasfloricultura
+RewriteRule ^(.*)$ /lindasfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.lindasfloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/lindasfloricultura
+RewriteRule ^(.*)$ /lindasfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} artepresentesfloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/artepresentesfloricultura
+RewriteRule ^(.*)$ /artepresentesfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.artepresentesfloricultura.com.br$
+RewriteCond %{REQUEST_URI} !^/artepresentesfloricultura
+RewriteRule ^(.*)$ /artepresentesfloricultura/$1 [L]
+
+RewriteCond %{HTTP_HOST} fabinarte.com.br$
+RewriteCond %{REQUEST_URI} !^/fabinarte
+RewriteRule ^(.*)$ /fabinarte/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.fabinarte.com.br$
+RewriteCond %{REQUEST_URI} !^/fabinarte
+RewriteRule ^(.*)$ /fabinarte/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.topsulbebidas.com.br$
+RewriteCond %{REQUEST_URI} !^/topsulbebidas
+RewriteRule ^(.*)$ /topsulbebidas/$1 [L]
+
+RewriteCond %{HTTP_HOST} topsulbebidas.com.br$
+RewriteCond %{REQUEST_URI} !^/topsulbebidas
+RewriteRule ^(.*)$ /topsulbebidas/$1 [L]
+
+RewriteCond %{HTTP_HOST} casaagropet.com.br$
+RewriteCond %{REQUEST_URI} !^/casaagropet
+RewriteRule ^(.*)$ /casaagropet/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.casaagropet.com.br$
+RewriteCond %{REQUEST_URI} !^/casaagropet
+RewriteRule ^(.*)$ /casaagropet/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.playgamesdigital.com.br$
+RewriteCond %{REQUEST_URI} !^/playgames
+RewriteRule ^(.*)$ /playgames/$1 [L]
+
+RewriteCond %{HTTP_HOST} playgamesdigital.com.br$
+RewriteCond %{REQUEST_URI} !^/playgames
+RewriteRule ^(.*)$ /playgames/$1 [L]
+
+RewriteCond %{HTTP_HOST} belinhababyce.com.br$
+RewriteCond %{REQUEST_URI} !^/belinhababy
+RewriteRule ^(.*)$ /belinhababy/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.belinhababyce.com.br$
+RewriteCond %{REQUEST_URI} !^/belinhababy
+RewriteRule ^(.*)$ /belinhababy/$1 [L]
+
+RewriteCond %{HTTP_HOST} boutiqueamandaperes.com.br$
+RewriteCond %{REQUEST_URI} !^/boutiqueamandaperes
+RewriteRule ^(.*)$ /boutiqueamandaperes/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.boutiqueamandaperes.com.br$
+RewriteCond %{REQUEST_URI} !^/boutiqueamandaperes
+RewriteRule ^(.*)$ /boutiqueamandaperes/$1 [L]
+
+RewriteCond %{HTTP_HOST} modalacoeabraco.com.br$
+RewriteCond %{REQUEST_URI} !^/lacoeabraco
+RewriteRule ^(.*)$ /lacoeabraco/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.modalacoeabraco.com.br$
+RewriteCond %{REQUEST_URI} !^/lacoeabraco
+RewriteRule ^(.*)$ /lacoeabraco/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.esteticaglamour.com.br$
+RewriteCond %{REQUEST_URI} !^/esteticaglamour
+RewriteRule ^(.*)$ /esteticaglamour/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.esteticaglamour.com.br$
+RewriteCond %{REQUEST_URI} !^/esteticaglamour
+RewriteRule ^(.*)$ /esteticaglamour/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.fermatmg.com.br$
+RewriteCond %{REQUEST_URI} !^/fermatmg
+RewriteRule ^(.*)$ /fermatmg/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.fermatmg.com.br$
+RewriteCond %{REQUEST_URI} !^/fermatmg
+RewriteRule ^(.*)$ /fermatmg/$1 [L]
+
+RewriteCond %{HTTP_HOST} santouro.com$
+RewriteCond %{REQUEST_URI} !^/santoouro
+RewriteRule ^(.*)$ /santoouro/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.santouro.com$
+RewriteCond %{REQUEST_URI} !^/santoouro
+RewriteRule ^(.*)$ /santoouro/$1 [L]
+
+RewriteCond %{HTTP_HOST} eurekapresentes.com.br$
+RewriteCond %{REQUEST_URI} !^/eurekapresentes
+RewriteRule ^(.*)$ /eurekapresentes/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.eurekapresentes.com.br$
+RewriteCond %{REQUEST_URI} !^/eurekapresentes
+RewriteRule ^(.*)$ /eurekapresentes/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.scottiproducoes.com.br$
+RewriteCond %{REQUEST_URI} !^/scottiproducoes
+RewriteRule ^(.*)$ /scottiproducoes/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.scottiproducoes.com.br$
+RewriteCond %{REQUEST_URI} !^/scottiproducoes
+RewriteRule ^(.*)$ /scottiproducoes/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.docesmonteiro.com.br$
+RewriteCond %{REQUEST_URI} !^/docesmonteiro
+RewriteRule ^(.*)$ /docesmonteiro/$1 [L]
+
+RewriteCond %{HTTP_HOST} docesmonteiro.com.br$
+RewriteCond %{REQUEST_URI} !^/docesmonteiro
+RewriteRule ^(.*)$ /docesmonteiro/$1 [L]
+
+RewriteCond %{HTTP_HOST} dulipestore.com.br$
+RewriteCond %{REQUEST_URI} !^/dulipestore
+RewriteRule ^(.*)$ /dulipestore/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.dulipestore.com.br$
+RewriteCond %{REQUEST_URI} !^/dulipestore
+RewriteRule ^(.*)$ /dulipestore/$1 [L]
+
+RewriteCond %{HTTP_HOST} mixdecore.com.br$
+RewriteCond %{REQUEST_URI} !^/mixdecore
+RewriteRule ^(.*)$ /mixdecore/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.mixdecore.com.br$
+RewriteCond %{REQUEST_URI} !^/mixdecore
+RewriteRule ^(.*)$ /mixdecore/$1 [L]
+
+RewriteCond %{HTTP_HOST} artbelmanipulacao.com.br$
+RewriteCond %{REQUEST_URI} !^/artbel
+RewriteRule ^(.*)$ /artbel/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.artbelmanipulacao.com.br$
+RewriteCond %{REQUEST_URI} !^/artbel
+RewriteRule ^(.*)$ /artbel/$1 [L]
+
+RewriteCond %{HTTP_HOST} mamaefelizbebefeliz.com.br$
+RewriteCond %{REQUEST_URI} !^/mamaefeliz
+RewriteRule ^(.*)$ /mamaefeliz/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.mamaefelizbebefeliz.com.br$
+RewriteCond %{REQUEST_URI} !^/mamaefeliz
+RewriteRule ^(.*)$ /mamaefeliz/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.noomaoficial.com.br$
+RewriteCond %{REQUEST_URI} !^/nooma
+RewriteRule ^(.*)$ /nooma/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.noomaoficial.com.br$
+RewriteCond %{REQUEST_URI} !^/nooma
+RewriteRule ^(.*)$ /nooma/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.gruporpm.com.br$
+RewriteCond %{REQUEST_URI} !^/grpm
+RewriteRule ^(.*)$ /grpm/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.gruporpm.com.br$
+RewriteCond %{REQUEST_URI} !^/grpm
+RewriteRule ^(.*)$ /grpm/$1 [L]
+
+RewriteCond %{HTTP_HOST} innuvem.net$
+RewriteCond %{REQUEST_URI} !^/innuvem
+RewriteRule ^(.*)$ /innuvem/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.innuvem.net$
+RewriteCond %{REQUEST_URI} !^/innuvem
+RewriteRule ^(.*)$ /innuvem/$1 [L]
+
+RewriteCond %{HTTP_HOST} stylloscalcados.com.br$
+RewriteCond %{REQUEST_URI} !^/styllos
+RewriteRule ^(.*)$ /styllos/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.stylloscalcados.com.br$
+RewriteCond %{REQUEST_URI} !^/styllos
+RewriteRule ^(.*)$ /styllos/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.glamouresmalteria.com.br$
+RewriteCond %{REQUEST_URI} !^/glamouresmalteria
+RewriteRule ^(.*)$ /glamouresmalteria/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.loja.glamouresmalteria.com.br$
+RewriteCond %{REQUEST_URI} !^/glamouresmalteria
+RewriteRule ^(.*)$ /glamouresmalteria/$1 [L]
+
+RewriteCond %{HTTP_HOST} loja.tamanhosnobres.com.br$
+RewriteCond %{REQUEST_URI} !^/tamanhosnobres
+RewriteRule ^(.*)$ /tamanhosnobres/$1 [L]
+
+RewriteCond %{HTTP_HOST} stspedestais.com.br$
+RewriteCond %{REQUEST_URI} !^/lojasts
+RewriteRule ^(.*)$ /lojasts/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.stspedestais.com.br$
+RewriteCond %{REQUEST_URI} !^/lojasts
+RewriteRule ^(.*)$ /lojasts/$1 [L]
+
+RewriteCond %{HTTP_HOST} mastermusicstore.com.br$
+RewriteCond %{REQUEST_URI} !^/mastermusic
+RewriteRule ^(.*)$ /mastermusic/$1 [L]
+
+RewriteCond %{HTTP_HOST} mastermusicstore.com.br$
+RewriteCond %{REQUEST_URI} !^/mastermusic
+RewriteRule ^(.*)$ /mastermusic/$1 [L]
+
+RewriteCond %{HTTP_HOST} brinquero.com.br$
+RewriteCond %{REQUEST_URI} !^/brinquero
+RewriteRule ^(.*)$ /brinquero/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.brinquero.com.br$
+RewriteCond %{REQUEST_URI} !^/brinquero
+RewriteRule ^(.*)$ /brinquero/$1 [L]
+
+RewriteCond %{HTTP_HOST} maquiagemvitale.com.br$
+RewriteCond %{REQUEST_URI} !^/vitalemake
+RewriteRule ^(.*)$ /vitalemake/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.maquiagemvitale.com.br$
+RewriteCond %{REQUEST_URI} !^/vitalemake
+RewriteRule ^(.*)$ /vitalemake/$1 [L]
+
+RewriteCond %{HTTP_HOST} sexshopeva.com.br$
+RewriteCond %{REQUEST_URI} !^/evasexshop
+RewriteRule ^(.*)$ /evasexshop/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.sexshopeva.com.br$
+RewriteCond %{REQUEST_URI} !^/evasexshop
+RewriteRule ^(.*)$ /evasexshop/$1 [L]
+
+RewriteCond %{HTTP_HOST} www.acequipamentos.com$
+RewriteCond %{REQUEST_URI} !^/acequipamentos
+RewriteRule ^(.*)$ /acequipamentos/$1 [L]
+
+RewriteCond %{HTTP_HOST} acequipamentos.com$
+RewriteCond %{REQUEST_URI} !^/acequipamentos
+RewriteRule ^(.*)$ /acequipamentos/$1 [L]
+

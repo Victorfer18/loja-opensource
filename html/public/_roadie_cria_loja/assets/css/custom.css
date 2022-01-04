@@ -1,0 +1,18 @@
+/* Add here all your css styles (customizations) */
+.form-control2{
+	min-height: 35px;
+}
+.c2{
+	width: 78%!important;
+}
+.c1{
+	width: 20%!important;
+}
+
+.logo{
+	margin:auto;
+}
+
+button.btn-u a {
+    color: white;
+}

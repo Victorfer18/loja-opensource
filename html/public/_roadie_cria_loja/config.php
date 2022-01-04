@@ -24,5 +24,5 @@ define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'R1D2C3ommerce');
 define('DB_DATABASE', 'novamoda');
-define('DB_PORT', '3306');
+define('DB_PORT', ' ');
 define('DB_PREFIX', 'oc_');
